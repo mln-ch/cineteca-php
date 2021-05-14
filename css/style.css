@@ -1,0 +1,267 @@
+.divider {
+  padding: 70px 0 0 0;
+}
+
+.pagina {
+  background-color: #f5f5f5;
+}
+
+.box-locandina {
+  margin-bottom: 60px;
+}
+
+.box-locandina h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.box-locandina p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin: 0 0 5px 0;
+}
+
+.box-locandina i {
+  margin-right: 10px;
+}
+
+.locandina {
+  position: relative;
+  overflow: hidden;
+}
+
+.locandina::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.action {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.locandina:hover .action {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.locandina:hover::before {
+  opacity: 1;
+}
+
+.action a {
+  display: block;
+  margin-top: 10px;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 90px;
+  border-top: 1px solid #ccc;
+  color: #aaaaaa;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.trama {
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.box-login {
+  margin: 150px auto 0 auto;
+  width: 400px;
+  background-color: #f5f5f5;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.logo-login {
+  font-size: 80px;
+  text-align: center;
+  color: #007bff;
+}
+
+.box-login input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.box-login input[type="password"] {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.user-info {
+  margin-left: 20px;
+  color: #fff !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* CSS MEL GRAFICA */
+/* ------------------------------------------------------------------------------------------ */
+
+.pellicola {
+  height: 200px;
+  background:
+  linear-gradient(
+      rgba(15,15,15,.3),
+      rgba(15,15,15,.5)
+  ),
+  url(../img/bkg.jpg) no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.imgthumb {
+  background: white;
+  padding: 10px;
+  display: inline-block !important;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.imgthumb .img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url(https://via.placeholder.com/300);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.h1-white {
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.h1-white h1 {
+  color: #fff;
+  font-size: 60px;
+  padding: 30px 0;
+}
+
+.h1-white h1 span {
+  font-size: 30px;
+  opacity: 70%;
+}
+
+.body {
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.body .col-3 {
+  background-color: rgb(220, 231, 233);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 150px;
+
+  position: relative;
+}
+
+.body .col-3::before {
+  content: " ";
+  display: inline-block;
+  clip-path: polygon(80% 0, 0% 100%, 80% 100%);
+  background-color: rgb(220, 231, 233);
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: -40px;
+  left: 7%;
+  z-index: 90;
+}
+
+.body .col-9 {
+  padding-left: 200px;
+}
+
+.body h2 {
+  font-size: 1rem;
+}
+
+.body h3 {
+  margin: 30px 0;
+}
+
+.content > .col {
+  margin-bottom: 15px;
+}
+
+.content-2 >.col {
+  margin: 15px;
+}
+
+.row-movies {
+justify-content: space-between;
+}
+
+.body .row .filmm {
+  width: 130px;
+  height: 180px;
+  padding: 5px;
+  margin-bottom: 30px;
+  transition: all .2s ease;
+
+  cursor: pointer;
+}
+
+.body .row .filmm:hover {
+  transform: scale(1.1);
+}
+
+.body .row .filmm img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-row {
+  justify-content: flex-end;
+}
+
+.opacity {
+  opacity: 80%;
+}
+
+.opacity-plus {
+  opacity: 50%;
+}
+
+.space {
+  letter-spacing: 2px;
+}
