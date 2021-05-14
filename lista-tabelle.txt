@@ -1,0 +1,33 @@
+---------
+FILM
+---------
+- id_film --> Chiave primaria
+- titolo
+- durata
+- genere
+- trama
+- anno
+- nazionalità
+- copertina
+- regista --> Contiene l'id del regista (chiave esterna)
+
+---------
+REGISTI
+---------
+- id_registi
+- nome
+- cognome
+- nazionalità
+- data_nascita
+
+
+---------
+UTENTI
+---------
+- id_utenti
+- nome
+- cognome
+- email
+- username
+- password
+- data_iscrizione
